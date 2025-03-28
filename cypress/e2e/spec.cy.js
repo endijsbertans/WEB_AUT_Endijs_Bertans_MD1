@@ -3,9 +3,8 @@ import { SelectablePage } from "../pageObjects/SelectablePage";
 describe('demoqa - MD1', () => {
   // added this to ignore site errors
   before(() => {
-    Cypress.on('uncaught:exception', (err, runnable) => {
-      console.log('Uncaught exception:', err.message);
-      return false;
+    Cypress.on("uncaught:exception", (err, runnable) => {
+    return false;
     });
   });
   
